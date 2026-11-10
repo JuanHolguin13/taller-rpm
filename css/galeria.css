@@ -1,0 +1,146 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    background-image: url(../img/background2.jpg);
+    background-size: cover;
+}
+.galerpm{
+    position: relative;
+    min-height: 100vh;
+}
+
+.galerpm h1{
+    color: #b21e35;
+    text-align: center;
+    padding: 15px;
+    font-size: 50px;
+    font-weight: 70px;
+    font-family: monospace;
+}
+
+.galerpm .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+} 
+
+.galerpm .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 8px solid #7f0119;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galerpm .video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+
+}
+
+
+.galerpm .img-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+} 
+
+.galerpm .img-container .imagen{
+    height: 250px;
+    width: 350px;
+    border: 8px solid #7f0119;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galerpm .img-container .imagen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+
+}
+
+.galerpm .img-container .imagen img:hover{
+    transform: scale(1.2);
+
+} 
+
+h1{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.img-gallery{
+
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 30px;
+    height: 191.25px;
+    width: 350px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    overflow: hidden;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+}
+.img-gallery img:hover{
+    transform: scale(1.2);
+}
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0,0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 90px;
+    color: #fff;
+    cursor: pointer;
+}
+.ful-img img{
+    width: 90%;
+    max-width: 600px;
+}
+@media screen and (max-width:400px){
+    h1{
+        text-decoration: none;
+    }
+    h1::before{
+        display: none;
+    }
+    h1 span{
+        padding: 0;
+    }
+}
+
